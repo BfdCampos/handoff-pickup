@@ -1,0 +1,26 @@
+{
+  "name": "bfdcampos",
+  "owner": {
+    "name": "Bruno Campos",
+    "url": "https://github.com/BfdCampos"
+  },
+  "metadata": {
+    "description": "Bruno Campos' Claude Code plugins.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "handoff-pickup",
+      "source": "./",
+      "description": "Handoff and pickup slash commands for resuming Claude Code work across sessions.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Bruno Campos",
+        "url": "https://github.com/BfdCampos"
+      },
+      "homepage": "https://github.com/BfdCampos/handoff-pickup",
+      "license": "MIT",
+      "keywords": ["handoff", "pickup", "session", "resume", "workflow"]
+    }
+  ]
+}

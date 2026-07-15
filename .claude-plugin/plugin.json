@@ -1,0 +1,20 @@
+{
+  "name": "handoff-pickup",
+  "version": "1.0.0",
+  "description": "Handoff and pickup slash commands for resuming Claude Code work across sessions. /handoff snapshots the current session into a durable markdown document; /pickup finds and loads a prior handoff so a fresh session can continue where the last one left off.",
+  "author": {
+    "name": "Bruno Campos",
+    "url": "https://github.com/BfdCampos"
+  },
+  "homepage": "https://github.com/BfdCampos/handoff-pickup",
+  "repository": "https://github.com/BfdCampos/handoff-pickup",
+  "license": "MIT",
+  "keywords": [
+    "handoff",
+    "pickup",
+    "session",
+    "context",
+    "resume",
+    "workflow"
+  ]
+}
