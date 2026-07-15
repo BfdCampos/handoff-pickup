@@ -25,12 +25,35 @@ Because each handoff is a plain file, `/pickup` can find them later by folder na
 
 ## Install
 
+You do not need to clone this repository. Claude Code fetches it for you when you add the marketplace.
+
+Run these two commands inside Claude Code:
+
 ```
 /plugin marketplace add BfdCampos/handoff-pickup
 /plugin install handoff-pickup@bfdcampos
 ```
 
-Then use the commands as `/handoff-pickup:handoff` and `/handoff-pickup:pickup`.
+What each step does:
+- `marketplace add BfdCampos/handoff-pickup` takes the GitHub `owner/repo` shorthand, fetches this repo, and reads `.claude-plugin/marketplace.json` to discover the plugins it offers. This repo defines a marketplace named `bfdcampos`.
+- `install handoff-pickup@bfdcampos` installs the `handoff-pickup` plugin from that marketplace. The part after `@` is the marketplace name (the `name` field in `marketplace.json`), not the repository name, which is why it reads `bfdcampos` and not `handoff-pickup`.
+
+The plugin is enabled as soon as it installs. Its commands are namespaced by the plugin, so you invoke them as `/handoff-pickup:handoff` and `/handoff-pickup:pickup`.
+
+Prefer the terminal? The same thing without the interactive UI:
+
+```bash
+claude plugin marketplace add BfdCampos/handoff-pickup
+claude plugin install handoff-pickup@bfdcampos
+```
+
+### Updating
+
+Auto-update is off by default for third-party marketplaces, so pull new versions when you want them:
+
+```
+/plugin marketplace update bfdcampos
+```
 
 ## Usage
 
